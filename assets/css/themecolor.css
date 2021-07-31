@@ -1,0 +1,190 @@
+@import url(../css/skins/color-1.css);
+.style-switcher {
+    position: fixed;
+    right: -1.2rem;
+    top: 5px;
+    z-index: 998;
+    width: 60px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    background: var(--container-color);
+    border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+.style-switcher.open {
+    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+}
+
+.style-switcher .s-icon {
+    position: absolute;
+    right: 100%;
+
+    width: 40px;
+    height: 40px;
+    /* margin: 0 15px 0 0; */
+    margin-right: 1rem;
+    
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+
+    color: var(--first-color);
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.style-switcher .s-icon i {
+    line-height: 40px;
+}
+
+.style-switcher .s-icon::after {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.style-switcher .style-switcher-toggler {
+    top: 0;
+}
+
+.style-switcher .day-night {
+    top: 55px;
+}
+.style-switcher h4 {
+    font-size: var(--small-font-size);
+    margin: 0 0 10px;
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: capitalize;
+}
+
+.style-switcher .colors {
+    display: block;
+}
+
+.style-switcher .colors span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.style-switcher .color-1 {
+    background: var(--color-1);
+}
+
+.style-switcher .color-2 {
+    background: var(--color-2);
+}
+
+.style-switcher .color-3 {
+    background: var(--color-3);
+}
+
+.style-switcher .color-4 {
+    background: var(--color-4);
+}
+
+.style-switcher .color-5 {
+    background: var(--color-5);
+}
+
+@media screen and (min-width: 768px) {
+    .style-switcher{
+        position: fixed;
+        right: 0;
+        top: 77px;
+        z-index: 998;
+    
+        width: 200px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+        background: var(--container-color);
+    }
+    .style-switcher .colors span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    
+        cursor: pointer;
+    }
+    .style-switcher .s-icon {
+        position: absolute;
+        right: 100%;
+    
+        width: 40px;
+        height: 40px;
+        margin: 0 20px 0 0;
+    
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+    
+        color: var(--first-color);
+    }
+    .style-switcher h4 {
+        font-size: var(--normal-font-size);
+        margin: 0 0 10px;
+        color: var(--text-color);
+        font-weight: var(--font-semi-bold);
+        text-transform: capitalize;
+    }
+    
+    .style-switcher .colors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .style-switcher .colors span{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+}
